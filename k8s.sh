@@ -3,3 +3,5 @@
 kubectl apply -f src/kubernetes/namespace.yaml
 kubectl apply -f src/kubernetes/dockerconfigsecret.yaml
 kubectl apply -f src/kubernetes/scaletestapp.yaml
+kubectl apply -f src/kubernetes/hpa.yaml
+
