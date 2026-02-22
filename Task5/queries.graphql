@@ -1,0 +1,43 @@
+# REST /clients/{id}
+query {
+    client(id: "123") {
+        id
+        name
+        age
+    }
+}
+
+# REST /clients/{id}/documents
+query {
+    client(id: "123") {
+        documents {
+            id
+            type
+            number
+        }
+    }
+}
+
+# REST /clients/{id}/relatives
+query {
+  client(id: "123") {
+    relatives {
+      id
+      relationType
+      name
+      age
+    }
+  }
+}
+
+
+# То ради чего стоит использовать GraphQL
+query {
+  client(id: "123") {
+    id
+    name
+    documents { id type number issueDate expiryDate }
+    relatives { id relationType name }
+  }
+}
+
