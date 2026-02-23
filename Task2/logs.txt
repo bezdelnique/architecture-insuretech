@@ -1,0 +1,12 @@
+$ kubectl get hpa -n insuretech -w
+NAME               REFERENCE                 TARGETS           MINPODS   MAXPODS   REPLICAS   AGE
+scaletestapp-hpa   Deployment/scaletestapp   memory: 36%/80%   1         10        1          26m
+scaletestapp-hpa   Deployment/scaletestapp   memory: 77%/80%   1         10        1          27m
+scaletestapp-hpa   Deployment/scaletestapp   memory: 89%/80%   1         10        1          28m
+scaletestapp-hpa   Deployment/scaletestapp   memory: 89%/80%   1         10        2          28m
+scaletestapp-hpa   Deployment/scaletestapp   memory: 48%/80%   1         10        2          29m
+scaletestapp-hpa   Deployment/scaletestapp   memory: 48%/80%   1         10        2          30m
+scaletestapp-hpa   Deployment/scaletestapp   memory: 48%/80%   1         10        2          31m
+scaletestapp-hpa   Deployment/scaletestapp   memory: 48%/80%   1         10        2          32m
+
+
